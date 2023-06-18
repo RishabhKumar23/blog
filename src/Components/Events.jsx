@@ -45,7 +45,7 @@ const Events = () => {
       <div className="flex flex-col items-center container mx-auto py-8 ml-1.5">
         <h1 className="text-2xl font-bold mb-4">Upcoming Events</h1>
         <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 overflow-y-scroll h-screen shadow-2xl">
-          {events.map((event) => (
+          {events?.map((event) => (
             <div key = { event.id } className="bg-white p-4 hover:shadow-2xl hover:shadow-gray-500">
               <span className="text-lg font-semibold mr-2">{event.title}</span>
               <img className="text-xl font-boldmb-4 rounded-md" src={event.img} alt={event.title} />

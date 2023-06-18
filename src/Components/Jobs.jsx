@@ -45,7 +45,7 @@ const Jobs = () => {
       <div className="flex flex-col items-center container mx-auto py-8 ml-1.5">
         <h2 className="text-2xl font-bold mb-4">Jobs</h2>
         <ul className="w-full max-w-lg overflow-y-scroll h-screen">
-          {jobs.map((job) => (
+          {jobs?.map((job) => (
             <li
               key={job.id}
               className="bg-white rounded shadow p-4 mb-4 sm:flex sm:items-center sm:justify-between hover:shadow-2xl hover:shadow-gray-500"

@@ -9,7 +9,7 @@ function App() {
     <div className="bg-white">
       <Router>
         <Routes>
-          <Route path="/" element={<Dashbord />} />
+          <Route path="/blog" element={<Dashbord />} />
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Contact />}/>
         </Routes>
